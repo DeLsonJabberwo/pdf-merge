@@ -1,4 +1,4 @@
-module pdf-merge
+module github.com/delsonjabberwo/pdf-merge
 
 go 1.25.5
 
