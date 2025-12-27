@@ -25,6 +25,9 @@ func main() {
 
 		var pdfs []string
 		filepath.WalkDir(dir, func(path string, d fs.DirEntry, err error) error {
+			if d.IsDir() {
+				return filepath.SkipDir
+			}
 			if filepath.Ext(d.Name()) == ".pdf" {
 				pdfs = append(pdfs, d.Name())
 			}
