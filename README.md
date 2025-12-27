@@ -18,7 +18,7 @@ pdf-merge [-o output.pdf] [input.pdf...]
 | Argument  | Description   | Default       |
 | --------  | -----------   | -------       |
 | `-o`      | output file   | output.pdf    |
-| other     | input files   | all pdfs in dir |
+| other     | input files   | all PDFs in the directory |
 
 If no input files are specified, all PDFs in the directory will be merged in alphabetical order.
 
