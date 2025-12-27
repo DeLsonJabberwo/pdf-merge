@@ -33,6 +33,11 @@ func main() {
 		inputFileNames = pdfs
 	}
 
+	if len(inputFileNames) == 0 {
+		log.Printf("No pdfs to merge.\n")
+		return
+	}
+
 	err := pdf.MergeCreateFile(inputFileNames, *outputFileName, false, nil)
 	if err != nil {
 		log.Fatalf("Error: %s\n", err)
